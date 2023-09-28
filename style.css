@@ -11,7 +11,9 @@ header{
     width: 100%;
     height: 80px;
     display: flex;
-    
+    z-index: 1000;
+    border-bottom: 3px solid black;
+    border-top: 1px solid black;
 }
 header ul{
    margin-left: 200px;
@@ -43,7 +45,7 @@ header li:hover{
 .logo{
     margin-top: 5px;
     margin-left: 50px;
-    width: 50px;
+    width: 80px;
     height: 70px;
 
 }
@@ -324,3 +326,283 @@ footer ul{
     color: #c59b08;
 }
 
+.number{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .number{
+        display: block;
+        font: 18px;
+        align-self: center;
+        margin-left: 15px;
+    }
+
+    header{
+        margin-top: 20px;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        border: none;
+    }
+    header ul{
+      display: none;
+    }
+    
+    .viber{
+        display: none;
+    }
+    .languages{
+        display: flex;
+        flex-direction: row;
+        width: 120px;
+        margin-left: 25px;
+        justify-content: space-between;
+
+    }
+    .logo{
+        margin-top: 5px;
+        width: 65px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+
+
+    main{
+
+        background-image: url(foto2/background8.jpg);
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:100%;
+
+        
+    }
+    main h1 p{
+        color:  black;
+    }
+    main p{
+        color: black;
+        width: 280px;
+
+    }
+    main h1{
+        width: 330px;
+        height: 150px;
+        color: black;
+    }
+    
+    .container{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        margin: 0px;
+        
+    }
+    
+    .container-2{
+        margin-top:0px;
+        height: 300px;
+    }
+    .container p{
+        
+        font-size: 15px;
+        color: white;
+    }
+    .container h1{
+        font-size: 22px;
+        color: white;
+        margin-top: 20px;
+    }
+    .container-2 p{
+        width: 90%;
+    }
+    .container-2 h3{
+    display: none;
+    
+    }
+    
+
+
+
+
+
+
+
+    article{
+        width: 100%;
+        height: 750px;
+        margin-top: 50px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    article img{
+        width: 300px;
+        height: 200px;
+        margin-left: 30px;
+        border-radius: 2em;
+        margin-bottom: 50px;
+        
+    }
+    
+    .aboutus{
+        width: 300px;
+        height: 200px;
+        margin-left: 30px;
+        
+    }
+    .aboutus p{
+        color: black;
+    }
+
+
+
+    .slider{
+        height: 100px;
+    }
+    .slide-track{
+        display: flex;
+        width:calc(150px * 18);
+        animation: scroll 40s linear infinite;
+    }
+    .slide{
+        height: 100px;
+        width: 230px;
+    }
+   
+
+    figure{
+        margin: 0 auto;
+        width: 100%;
+        height: 1200px;
+    }
+    .text{
+        margin-bottom: 330px;
+        padding: 10px;
+    }
+    .text h2{
+        margin-bottom: 30px;
+    }
+    .container-price{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 250px;
+    }
+    .container-price h2{
+        margin: 0px;
+    }
+    .container-price h3{
+        display: none;
+    }
+    .first-price{
+        width: 250px;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+    .second-price{
+        
+        width: 250px;
+        height: 400px;
+    }
+
+
+    summary{
+        margin-left:0px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    summary img{
+        margin-top: 50px;
+        width: 330px;
+        height: 330px;
+    }
+    .tekst-ip{
+        width: 340px;
+        margin: 0 auto;
+        
+    }
+    summary .paragraf{
+        margin-top: 20px;
+    }
+    .tekst-ip h3{
+        margin-top: 30px;
+    }
+
+    footer{
+        display: none;
+    }
+
+
+
+
+    footer{
+        margin-top: 500px;
+        width: 100%;
+        height: 250px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    .container-footer-1{
+        margin-top: 50px;
+    }
+    footer ul{
+        margin-top: 30px;
+    }
+    footer ul li{
+        font-size: 14px;
+    }
+    footer ul{
+        list-style-type: none;
+    }
+    
+    .rate {
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #ffc700;    
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;  
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+}
